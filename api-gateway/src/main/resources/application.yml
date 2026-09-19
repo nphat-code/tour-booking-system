@@ -1,0 +1,40 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: api-gateway
+  cloud:
+    gateway:
+      globalcors:
+        cors-configurations:
+          '[/**]':
+            allowedOrigins:
+              - "http://localhost:5173"
+              - "http://localhost:3000"
+            allowedMethods:
+              - GET
+              - POST
+              - PUT
+              - DELETE
+              - OPTIONS
+            allowedHeaders: "*"
+            allowCredentials: true
+      routes:
+        # Route tới User Service
+        - id: user-service-route
+          uri: http://localhost:8081
+          predicates:
+            - Path=/api/users/**
+
+        # Route tới Tour Service
+        - id: tour-service-route
+          uri: http://localhost:8082
+          predicates:
+            - Path=/api/tours/**, /api/destinations/**
+
+        # Route tới Booking Service
+        - id: booking-service-route
+          uri: http://localhost:8083
+          predicates:
+            - Path=/api/bookings/**
