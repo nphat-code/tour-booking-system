@@ -1,0 +1,18 @@
+Chuyen can 10%
+Seminar 15% (thay chon)
+Do an cuoi ki 25% (tuan 14)
+Thi tap trung (50%):
+- Cau hoi tu luan thay cho (80%)
+- Ngoai cau hoi thay cho trong qua trinh hoc (20%)
+Noi dung cuoi ki:
+Dung Java Spring Boot xay dung web, frontend thoai mai
+web app 1: chung 1 project
+web app 2 (*): 1 project frontend 1 project backend (SOA)
+web app 3 (*): 1 frontend dùng cho nhieu project backend (nhieu chuc nang) (Microservice) (uu tien)
+>= 3 nhom ng dung (ko can dang nhap, nhan vien/thanh vien, quan tri/admin)
+>= 3 man hinh chuc nang voi moi nhom nguoi dung (chuc nang quan trong nhat cua nhom nguoi dung)
+-----------------------------------------------------------------------------------------------
+19/9 lam bai tap chuong 1
+do an cuoi ki chon trong danh sach de tai
+co the copy web khac
+
